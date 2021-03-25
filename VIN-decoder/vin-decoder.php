@@ -8,7 +8,7 @@ Description: Show details about the car by its VIN code
 
         if(array_key_exists('vin_decoder_update', $_POST)) {
             update_option( 'vin-decoder_decode_vin', $_POST['vin_code']);
-            $vin_code = get_option( 'vin-decoder_decode_vin', 'JTHBP5C21B5009664' );
+            $vin_code = get_option( 'vin-decoder_decode_vin', '' );
 
             ?>
                 <div id="setting-error-settings_updated" class="updated settings-error notice is-dismissible"><strong>Settings habe been saved</strong></div>
